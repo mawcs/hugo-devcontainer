@@ -1,0 +1,13 @@
+{
+    "id": "hugo-go-dartsass",
+    "version": "0.1.0",
+    "name": "Hugo, Go, DartSASS",
+    "description": "Dev Container for building Hugo sites with the added Go and DartSASS dependencies.",
+    "documentationURL": "https://github.com/mawcs/hugo-devcontainer/wiki",
+    "publisher": "Michael A Williamson",
+    "licenseURL": "https://github.com/mawcs",
+    "platforms": ["Hugo","Go","DartSASS"],
+    "optionalPaths": [
+        ".github/*"
+    ]
+}
