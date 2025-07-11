@@ -1,0 +1,28 @@
+{
+	"name": "Hugo",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			// Switching to "hugo" will use the standard Hugo version, but will break the integration with Dart Sass.
+			"VARIANT": "hugo_extended",
+			// Hugo version to use. Use "latest" for the latest version.
+			"VERSION": "latest",
+		}
+	},
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/zsh"
+	},
+	// These extensions are installed in VS Code. 
+	"extensions": [
+		"davidanson.vscode-markdownlint",
+		"tamasfe.even-better-toml"
+	],
+	"forwardPorts": [
+		1313
+	],
+	"remoteUser": "vscode",
+	"features": {
+		"ghcr.io/devcontainers/features/go:1": {},
+		"ghcr.io/prplecake/devcontainer-features/dart-sass:1": {}
+	}
+}
